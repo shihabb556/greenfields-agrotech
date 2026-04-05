@@ -1,0 +1,99 @@
+@import "tailwindcss";
+
+@theme {
+  --color-on-primary-fixed-variant: #005322;
+  --color-secondary-fixed-dim: #aad28f;
+  --color-secondary: #456730;
+  --color-background: #f9faf7;
+  --color-surface-dim: #d9dad8;
+  --color-on-tertiary-fixed: #2d1600;
+  --color-on-error: #ffffff;
+  --color-surface: #f9faf7;
+  --color-on-primary-fixed: #002109;
+  --color-tertiary: #683b00;
+  --color-surface-container: #edeeeb;
+  --color-surface-variant: #e2e3e0;
+  --color-on-surface-variant: #40493f;
+  --color-on-secondary-fixed: #092100;
+  --color-on-tertiary-container: #ffcd9f;
+  --color-tertiary-fixed: #ffdcbe;
+  --color-primary-fixed-dim: #8ad895;
+  --color-inverse-on-surface: #f0f1ee;
+  --color-on-secondary-fixed-variant: #2e4f1a;
+  --color-surface-container-high: #e7e8e6;
+  --color-outline-variant: #bfc9bc;
+  --color-surface-tint: #1d6c35;
+  --color-surface-container-highest: #e2e3e0;
+  --color-on-tertiary-fixed-variant: #6a3c00;
+  --color-outline: #707a6e;
+  --color-on-surface: #191c1b;
+  --color-tertiary-container: #855116;
+  --color-tertiary-fixed-dim: #feb874;
+  --color-error: #ba1a1a;
+  --color-on-secondary-container: #4b6e35;
+  --color-primary-container: #1c6b34;
+  --color-inverse-primary: #8ad895;
+  --color-secondary-fixed: #c5efa9;
+  --color-on-error-container: #93000a;
+  --color-on-tertiary: #ffffff;
+  --color-surface-bright: #f9faf7;
+  --color-on-primary-container: #9ae9a4;
+  --color-inverse-surface: #2e312f;
+  --color-surface-container-low: #f3f4f1;
+  --color-on-primary: #ffffff;
+  --color-surface-container-lowest: #ffffff;
+  --color-on-secondary: #ffffff;
+  --color-primary-fixed: #a5f5af;
+  --color-primary: #005221;
+  --color-on-background: #191c1b;
+  --color-secondary-container: #c5efa9;
+  --color-error-container: #ffdad6;
+
+  --radius-default: 0.25rem;
+  --radius-lg: 0.5rem;
+  --radius-xl: 0.75rem;
+  --radius-full: 9999px;
+
+  --font-headline: "Manrope", sans-serif;
+  --font-body: "Inter", sans-serif;
+  --font-label: "Inter", sans-serif;
+}
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+  body {
+    @apply bg-background text-on-surface font-body selection:bg-primary-fixed selection:text-on-primary-fixed;
+  }
+}
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.signature-gradient {
+  background: linear-gradient(135deg, #005221 0%, #1c6b34 100%);
+}
+
+.tonal-shift-surface-container-low {
+  background-color: #f3f4f1;
+}
+
+.scale-95-on-click:active {
+  transform: scale(0.95);
+}
+
+/* Custom scrollbar for premium feel */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-surface-container;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-primary/20 rounded-full hover:bg-primary/40 transition-colors;
+}

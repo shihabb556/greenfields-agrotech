@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>GreenFields AgroTech | Organic Precision in Agriculture</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-primary-fixed-variant": "#005322",
+                    "secondary-fixed-dim": "#aad28f",
+                    "secondary": "#456730",
+                    "background": "#f9faf7",
+                    "surface-dim": "#d9dad8",
+                    "on-tertiary-fixed": "#2d1600",
+                    "on-error": "#ffffff",
+                    "surface": "#f9faf7",
+                    "on-primary-fixed": "#002109",
+                    "tertiary": "#683b00",
+                    "surface-container": "#edeeeb",
+                    "surface-variant": "#e2e3e0",
+                    "on-surface-variant": "#40493f",
+                    "on-secondary-fixed": "#092100",
+                    "on-tertiary-container": "#ffcd9f",
+                    "tertiary-fixed": "#ffdcbe",
+                    "primary-fixed-dim": "#8ad895",
+                    "inverse-on-surface": "#f0f1ee",
+                    "on-secondary-fixed-variant": "#2e4f1a",
+                    "surface-container-high": "#e7e8e6",
+                    "outline-variant": "#bfc9bc",
+                    "surface-tint": "#1d6c35",
+                    "surface-container-highest": "#e2e3e0",
+                    "on-tertiary-fixed-variant": "#6a3c00",
+                    "outline": "#707a6e",
+                    "on-surface": "#191c1b",
+                    "tertiary-container": "#855116",
+                    "tertiary-fixed-dim": "#feb874",
+                    "error": "#ba1a1a",
+                    "on-secondary-container": "#4b6e35",
+                    "primary-container": "#1c6b34",
+                    "inverse-primary": "#8ad895",
+                    "secondary-fixed": "#c5efa9",
+                    "on-error-container": "#93000a",
+                    "on-tertiary": "#ffffff",
+                    "surface-bright": "#f9faf7",
+                    "on-primary-container": "#9ae9a4",
+                    "inverse-surface": "#2e312f",
+                    "surface-container-low": "#f3f4f1",
+                    "on-primary": "#ffffff",
+                    "surface-container-lowest": "#ffffff",
+                    "on-secondary": "#ffffff",
+                    "primary-fixed": "#a5f5af",
+                    "primary": "#005221",
+                    "on-background": "#191c1b",
+                    "secondary-container": "#c5efa9",
+                    "error-container": "#ffdad6"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Manrope"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .signature-gradient {
+            background: linear-gradient(135deg, #005221 0%, #1c6b34 100%);
+        }
+        .tonal-shift-surface-container-low { background-color: #f3f4f1; }
+        .scale-95-on-click:active { transform: scale(0.95); }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- TopNavBar -->
+<header class="sticky top-0 w-full z-50 bg-white/80 backdrop-blur-xl shadow-sm">
+<nav class="flex justify-between items-center max-w-7xl mx-auto px-6 py-4">
+<div class="text-2xl font-extrabold text-emerald-950 tracking-tighter font-headline">GreenFields AgroTech</div>
+<div class="hidden md:flex space-x-8 items-center">
+<a class="text-emerald-700 border-b-2 border-emerald-700 pb-1 font-headline font-bold tracking-tight" href="#hero">Hero</a>
+<a class="text-stone-600 hover:text-emerald-800 transition-colors font-headline font-bold tracking-tight" href="#about">About</a>
+<a class="text-stone-600 hover:text-emerald-800 transition-colors font-headline font-bold tracking-tight" href="#services">Services</a>
+<a class="text-stone-600 hover:text-emerald-800 transition-colors font-headline font-bold tracking-tight" href="#products">Products</a>
+<a class="text-stone-600 hover:text-emerald-800 transition-colors font-headline font-bold tracking-tight" href="#projects">Projects</a>
+<a class="text-stone-600 hover:text-emerald-800 transition-colors font-headline font-bold tracking-tight" href="#blog">Blog</a>
+<a class="text-stone-600 hover:text-emerald-800 transition-colors font-headline font-bold tracking-tight" href="#contact">Contact</a>
+<button class="signature-gradient text-on-primary px-6 py-2 rounded-lg font-bold scale-95-on-click transition-all">Get Started</button>
+</div>
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</nav>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="relative min-h-[921px] flex items-center overflow-hidden" id="hero">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover brightness-[0.7]" data-alt="expansive lush green crop field under a vibrant sunrise with soft golden light and misty distant trees" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB4hEHmvIfMl0EpdPGV9VKyyuO_O7pf47C-OTWGKzwTSmFItoZAU92svTXypg_sd8iDa1gWJzJ0BPuXO09EYE2Mu83tH-6UhJtgJhXqgD1o-TvWl8OrkAgIlqWK7c1G3ir2iO2TYhU_LA9L0L8vVJb8LxF-RbOxMIztIjFC9R5LDA5JVR3pwICWDpuhI00vHwca4FbbyJTnoOGJi71VFUw3fbZOGyvLUAqavUYxgQ4WdQlwVBa2VO0qqRB2J5JTqpsvntmF060a-Ydm"/>
+</div>
+<div class="relative z-10 max-w-7xl mx-auto px-6 py-20 text-white">
+<div class="max-w-3xl">
+<span class="bg-primary/30 backdrop-blur-md px-4 py-1 rounded-full text-sm font-label tracking-widest uppercase mb-6 inline-block">Cultivating Innovation, Harvesting Sustainability</span>
+<h1 class="text-5xl md:text-7xl font-headline font-extrabold tracking-tight mb-6 leading-[1.1]">The Future of Agriculture is <span class="text-primary-fixed">Organic &amp; Precise</span>.</h1>
+<p class="text-lg md:text-xl text-surface-variant mb-10 leading-relaxed font-body">Leveraging advanced agronomy and sustainable practices to empower the next generation of global farmers with precision-engineered organic solutions.</p>
+<div class="flex flex-col sm:flex-row gap-4">
+<a class="signature-gradient text-on-primary px-8 py-4 rounded-xl font-bold text-center shadow-xl hover:shadow-primary/20 transition-all" href="#products">Explore Products</a>
+<a class="bg-white/10 backdrop-blur-md border border-white/20 text-white px-8 py-4 rounded-xl font-bold text-center hover:bg-white/20 transition-all" href="#contact">Contact Us</a>
+</div>
+</div>
+<!-- Stats Row -->
+<div class="mt-20 grid grid-cols-1 md:grid-cols-3 gap-8 border-t border-white/10 pt-12">
+<div class="flex flex-col">
+<span class="text-4xl font-headline font-extrabold text-primary-fixed">5000+</span>
+<span class="text-surface-variant font-label text-sm uppercase tracking-wider">Farmers Served</span>
+</div>
+<div class="flex flex-col">
+<span class="text-4xl font-headline font-extrabold text-primary-fixed">2000+</span>
+<span class="text-surface-variant font-label text-sm uppercase tracking-wider">Acres Managed</span>
+</div>
+<div class="flex flex-col">
+<span class="text-4xl font-headline font-extrabold text-primary-fixed">50+</span>
+<span class="text-surface-variant font-label text-sm uppercase tracking-wider">Product Types</span>
+</div>
+</div>
+</div>
+</section>
+<!-- About Us Section -->
+<section class="py-24 bg-surface" id="about">
+<div class="max-w-7xl mx-auto px-6">
+<div class="grid lg:grid-cols-2 gap-16 items-center">
+<div class="relative">
+<div class="rounded-3xl overflow-hidden shadow-2xl">
+<img class="w-full h-[600px] object-cover" data-alt="detailed macro shot of a young green sprout emerging from dark fertile soil in natural outdoor light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBPhH7qwdeMadydZjvnybJY0IMFbDQplDRZMyhf_WtU4vjd58UcknPxhSGCnLFNnwUDDMRPS3JHzROacy3npOpk7qdMyg7_vSwim_FwSzWS3hbeEhUFZ_n5qPSckEie_mCPCE3qqRmrcJqqqBpgkGPX2lum95FD1GvvjFOWgx0r4RkiHoRAEW24p9kzQ2eLYkUA68jC6enweDYKy-xk0h8xDEKJGM-QhVvchnQN2O2Rbs78kyBU7O7j1CP6RXuP6y5MfgZED-kq7dkp"/>
+</div>
+<div class="absolute -bottom-8 -right-8 bg-tertiary-fixed p-8 rounded-3xl hidden md:block max-w-xs shadow-lg">
+<p class="text-on-tertiary-fixed font-headline font-bold text-lg italic">"Roots in tradition, vision in technology."</p>
+</div>
+</div>
+<div>
+<span class="text-primary font-label font-semibold tracking-widest uppercase mb-4 block">Our Heritage</span>
+<h2 class="text-4xl md:text-5xl font-headline font-extrabold text-on-surface mb-8 tracking-tight">Decades of Agronomic Excellence</h2>
+<p class="text-on-surface-variant text-lg leading-relaxed mb-10">Founded in 1994, GreenFields AgroTech began as a small seed research facility. Today, we are a beacon of sustainable innovation, bridging the gap between ancestral wisdom and cutting-edge biophysics.</p>
+<div class="grid sm:grid-cols-2 gap-6 mb-12">
+<div class="bg-surface-container-low p-6 rounded-2xl">
+<span class="material-symbols-outlined text-primary mb-4 text-3xl">rocket_launch</span>
+<h3 class="font-headline font-bold text-xl mb-2">Our Mission</h3>
+<p class="text-on-surface-variant text-sm">To provide precision tools and organic inputs that maximize yield while regenerating local ecosystems.</p>
+</div>
+<div class="bg-surface-container-low p-6 rounded-2xl">
+<span class="material-symbols-outlined text-tertiary mb-4 text-3xl">visibility</span>
+<h3 class="font-headline font-bold text-xl mb-2">Our Vision</h3>
+<p class="text-on-surface-variant text-sm">A global agricultural landscape where productivity and planetary health are inextricably linked.</p>
+</div>
+</div>
+<div class="flex items-center gap-6 grayscale opacity-60">
+<span class="material-symbols-outlined text-4xl">workspace_premium</span>
+<span class="material-symbols-outlined text-4xl">verified</span>
+<span class="material-symbols-outlined text-4xl">eco</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Services Section -->
+<section class="py-24 bg-surface-container-low" id="services">
+<div class="max-w-7xl mx-auto px-6">
+<div class="flex flex-col md:flex-row md:justify-between md:items-end mb-16 gap-6">
+<div class="max-w-2xl">
+<span class="text-primary font-label font-semibold tracking-widest uppercase mb-4 block">What We Offer</span>
+<h2 class="text-4xl font-headline font-extrabold text-on-surface tracking-tight">Comprehensive Agri-Solutions</h2>
+</div>
+<p class="text-on-surface-variant max-w-sm">From the first seed to the final harvest, we provide the expertise and infrastructure to succeed.</p>
+</div>
+<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+<!-- Service 1 -->
+<div class="group bg-surface rounded-3xl p-8 hover:bg-primary transition-all duration-500 shadow-sm">
+<div class="w-16 h-16 bg-primary-container rounded-2xl flex items-center justify-center mb-8 group-hover:bg-white/20 transition-colors">
+<span class="material-symbols-outlined text-on-primary-container group-hover:text-white text-3xl">grass</span>
+</div>
+<h3 class="font-headline font-bold text-2xl mb-4 group-hover:text-white">Seed Supply</h3>
+<p class="text-on-surface-variant group-hover:text-white/80 text-sm leading-relaxed mb-6">Non-GMO, high-yield varieties optimized for diverse regional microclimates.</p>
+<a class="text-primary group-hover:text-white font-bold flex items-center gap-2 text-sm uppercase tracking-wider" href="#">Learn More <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+</div>
+<!-- Service 2 -->
+<div class="group bg-surface rounded-3xl p-8 hover:bg-primary transition-all duration-500 shadow-sm">
+<div class="w-16 h-16 bg-primary-container rounded-2xl flex items-center justify-center mb-8 group-hover:bg-white/20 transition-colors">
+<span class="material-symbols-outlined text-on-primary-container group-hover:text-white text-3xl">agriculture</span>
+</div>
+<h3 class="font-headline font-bold text-2xl mb-4 group-hover:text-white">Farm Equipment</h3>
+<p class="text-on-surface-variant group-hover:text-white/80 text-sm leading-relaxed mb-6">Precision machinery and IoT sensors for real-time crop monitoring.</p>
+<a class="text-primary group-hover:text-white font-bold flex items-center gap-2 text-sm uppercase tracking-wider" href="#">Learn More <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+</div>
+<!-- Service 3 -->
+<div class="group bg-surface rounded-3xl p-8 hover:bg-primary transition-all duration-500 shadow-sm">
+<div class="w-16 h-16 bg-primary-container rounded-2xl flex items-center justify-center mb-8 group-hover:bg-white/20 transition-colors">
+<span class="material-symbols-outlined text-on-primary-container group-hover:text-white text-3xl">psychology</span>
+</div>
+<h3 class="font-headline font-bold text-2xl mb-4 group-hover:text-white">Consultancy</h3>
+<p class="text-on-surface-variant group-hover:text-white/80 text-sm leading-relaxed mb-6">Personalized soil health analysis and long-term crop rotation strategy.</p>
+<a class="text-primary group-hover:text-white font-bold flex items-center gap-2 text-sm uppercase tracking-wider" href="#">Learn More <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+</div>
+<!-- Service 4 -->
+<div class="group bg-surface rounded-3xl p-8 hover:bg-primary transition-all duration-500 shadow-sm">
+<div class="w-16 h-16 bg-primary-container rounded-2xl flex items-center justify-center mb-8 group-hover:bg-white/20 transition-colors">
+<span class="material-symbols-outlined text-on-primary-container group-hover:text-white text-3xl">science</span>
+</div>
+<h3 class="font-headline font-bold text-2xl mb-4 group-hover:text-white">Bio-inputs</h3>
+<p class="text-on-surface-variant group-hover:text-white/80 text-sm leading-relaxed mb-6">Natural fertilizers and organic pesticides designed for cellular efficacy.</p>
+<a class="text-primary group-hover:text-white font-bold flex items-center gap-2 text-sm uppercase tracking-wider" href="#">Learn More <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+</div>
+</div>
+</div>
+</section>
+<!-- Products Section (Bento Style) -->
+<section class="py-24 bg-surface" id="products">
+<div class="max-w-7xl mx-auto px-6">
+<div class="text-center mb-16">
+<span class="text-tertiary font-label font-semibold tracking-widest uppercase mb-4 block">Our Inventory</span>
+<h2 class="text-4xl md:text-5xl font-headline font-extrabold text-on-surface mb-6 tracking-tight">Precision Farming Essentials</h2>
+<div class="flex flex-wrap justify-center gap-4 mt-8">
+<button class="bg-primary text-on-primary px-6 py-2 rounded-full text-sm font-bold">All Products</button>
+<button class="bg-surface-container hover:bg-surface-container-highest px-6 py-2 rounded-full text-sm font-bold transition-colors">Seeds</button>
+<button class="bg-surface-container hover:bg-surface-container-highest px-6 py-2 rounded-full text-sm font-bold transition-colors">Equipment</button>
+<button class="bg-surface-container hover:bg-surface-container-highest px-6 py-2 rounded-full text-sm font-bold transition-colors">Fertilizers</button>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Product Card 1 -->
+<div class="md:col-span-2 bg-surface-container rounded-[2rem] overflow-hidden group flex flex-col md:flex-row">
+<div class="md:w-1/2 overflow-hidden h-64 md:h-auto">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="industrial grade automated grain seeder machine in a clean warehouse environment with morning light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB812h3MQUg7mPOcUz5s6UPTmqlYzn7yoBNiDSZscKVU7VtV0xhb8uCuKxzKI3S9ok8BhrJkMAs1vjdFAW5FuysvaUBAwSkpU4YutN4mxNc22Vw8o5VbXiMzAS4BnIUV-RUQX6CUzuMBVYsFxay-diLGDzn37u_uamVR6JJJOZIe-Ifk2dTVgfyNaTq4JV6gtjk7J7fylwLtyEi2s6_-EHodl8xTYXkBbMzxRuHz0DIp99ZF08R9Z1Rs-kYu-qsRc45DDt4PhEpxlar"/>
+</div>
+<div class="md:w-1/2 p-10 flex flex-col justify-center">
+<span class="text-secondary font-bold text-xs uppercase tracking-widest mb-2">Best Seller</span>
+<h3 class="text-3xl font-headline font-bold text-on-surface mb-4">Apex-900 Multi-Seeder</h3>
+<p class="text-on-surface-variant mb-8">Precision pneumatic planting for consistent depth and optimal spacing in any soil type.</p>
+<button class="signature-gradient text-on-primary py-4 px-8 rounded-xl font-bold w-fit scale-95-on-click">Request Quote</button>
+</div>
+</div>
+<!-- Product Card 2 -->
+<div class="bg-surface-container rounded-[2rem] overflow-hidden group flex flex-col">
+<div class="h-64 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="close-up of handful of various organic crop seeds including corn and wheat held by a farmer" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCP42vbLRppd0jNmDIHiHz8g3JZtPsb4LGIwIRkPIfuhfUfLN4cW7HKQM9ymEStsm1gHdBEYQCncRv9Fo8p6FjkNuZtZQYwv07D2lTiJd5E0ShMnXy_zZavbeXOaC-I3_lIegJb44YOCx6fq_CVHopggv38-g-REvjg2qU-R8GwCcAQUFmZGHEnMDK4VgjV4zvaf6T_sces0tPWWbDM4i0--pvdmsyMdPSpqiMXI_HWrqeJ76t0vGbz2CGAQ5mD_q-0TAJy52nEYz0k"/>
+</div>
+<div class="p-8 flex flex-col flex-grow">
+<h3 class="text-2xl font-headline font-bold text-on-surface mb-2">Heritage Wheat Blend</h3>
+<p class="text-on-surface-variant text-sm mb-6">Ancient grain genetics bred for modern climate resilience and nutrient density.</p>
+<div class="mt-auto">
+<button class="w-full border-2 border-outline-variant text-on-surface py-3 rounded-xl font-bold hover:bg-surface-variant transition-colors">Details</button>
+</div>
+</div>
+</div>
+<!-- Product Card 3 -->
+<div class="bg-surface-container rounded-[2rem] overflow-hidden group flex flex-col">
+<div class="h-64 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="vibrant green liquid fertilizer in a glass lab flask reflecting soft laboratory lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBVxeoe2lLVRfgITrdqVImBvLJoQUzU4HCzC1g68D6EkAJJcJpa8F6nyJlbgMaiEMpq8lOq6be-hW8MYFgqlomtsDU8yGnyMforjJuIStk2IoIUru615Vu7-nG114pP2y47VqBGTaT09JWphvOxbbTVHfp1YCefSc2nEcEFUc83Zq9f5slw1rAmE7hjHwrwajiVxqUgXlA5g0gteqliKGGZ6FkYoLyp8cUAyfzAkzy_L3FfIBRlve9JcamJnwjADChdBmBeFFj106vJ"/>
+</div>
+<div class="p-8 flex flex-col flex-grow">
+<h3 class="text-2xl font-headline font-bold text-on-surface mb-2">BioBoost Plus</h3>
+<p class="text-on-surface-variant text-sm mb-6">Microbial soil enhancer that triples nitrogen fixation naturally without chemical runoff.</p>
+<div class="mt-auto">
+<button class="w-full border-2 border-outline-variant text-on-surface py-3 rounded-xl font-bold hover:bg-surface-variant transition-colors">Details</button>
+</div>
+</div>
+</div>
+<!-- Product Card 4 (Small Bento) -->
+<div class="md:col-span-2 bg-primary-container rounded-[2rem] p-10 flex flex-col md:flex-row items-center gap-10">
+<div class="md:w-2/3">
+<h3 class="text-3xl font-headline font-bold text-on-primary-container mb-4">Custom Bulk Orders?</h3>
+<p class="text-on-primary-container opacity-80 mb-6">We provide specialized pricing and logistics for commercial farms and cooperatives managing over 500 acres.</p>
+<a class="inline-flex items-center gap-2 bg-white text-primary px-8 py-3 rounded-xl font-bold" href="#contact">Speak to a Specialist <span class="material-symbols-outlined">chat</span></a>
+</div>
+<div class="md:w-1/3 text-6xl text-on-primary-container opacity-20">
+<span class="material-symbols-outlined" style="font-size: 120px;">local_shipping</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Projects & Testimonials -->
+<section class="py-24 bg-surface-container-low overflow-hidden" id="projects">
+<div class="max-w-7xl mx-auto px-6">
+<span class="text-primary font-label font-semibold tracking-widest uppercase mb-4 block text-center">Impact &amp; Results</span>
+<h2 class="text-4xl font-headline font-extrabold text-on-surface text-center mb-16 tracking-tight">Success Stories from the Field</h2>
+<div class="grid lg:grid-cols-12 gap-12 items-center">
+<div class="lg:col-span-7 space-y-8">
+<div class="relative rounded-[3rem] overflow-hidden h-[500px] shadow-xl">
+<img class="w-full h-full object-cover" data-alt="happy elder farmer standing in a flourishing cornfield under bright midday sun" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBlaiCh7PbtcK2TzpNnm1XNQn8tbsGetRjk0E63ffQnEoFcYnOfAm9RO1Fw58j7sP66Y5nbvbHijjBaMpF-IRJxWR1H6_zX9EvxkLUrTYRypjUU5AF3MEinx_0ZlZiE_Tl2TZh6ONYxZ2uMzcYrZIiyZf1jYdP1klkghZ0hDcL5EXdh--AD-uucKz59bmKWLTfTiTTRL7NI2gC7Lo2DoFJiE6BtFHRU6JlluMmXgb-TG4C4ti9zZXLVIzNuKWubeVMuUWyATmXGnycQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-12 left-12 right-12 text-white">
+<span class="bg-tertiary px-3 py-1 rounded-full text-xs font-bold mb-4 inline-block">Case Study: Valley View Farm</span>
+<h3 class="text-3xl font-headline font-bold mb-4">35% Increase in Yield, 100% Organic</h3>
+<p class="text-white/80 leading-relaxed">By implementing our BioBoost system and automated sensors, Valley View Farm transformed their dry-land operations into a thriving organic oasis.</p>
+</div>
+</div>
+</div>
+<div class="lg:col-span-5">
+<div class="space-y-8">
+<div class="bg-surface p-10 rounded-[2rem] border border-outline-variant/30 relative">
+<span class="material-symbols-outlined text-tertiary-fixed-dim absolute -top-4 -left-4 text-6xl opacity-20" style="font-variation-settings: 'FILL' 1;">format_quote</span>
+<p class="text-xl text-on-surface italic mb-8 relative z-10 leading-relaxed">"Switching to GreenFields wasn't just a business move, it was a legacy move. My soil is healthier today than it was when my grandfather farmed it, and our profits have never been higher."</p>
+<div class="flex items-center gap-4">
+<div class="w-14 h-14 rounded-full overflow-hidden bg-stone-200">
+<img class="w-full h-full object-cover" data-alt="portrait of a confident middle aged male farmer smiling gently at the camera" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCSocVB4ikcZpTQhSmv-M2XDpxvS1JStyYbjrXvqxPwDa5JsO8VKZT6Kfjf8CuNhrbTfCnsZmWCSeiIZYhGZZQb7t0X-_O65TVIRyaZlxoSLdLQqUqakTVsBzrUMqi9BO5JB6oVNoocBoA7pjkmk98OvBC-c5nzATsvcSEqL2JvROZhi63SWeZEZIwbnwQ-98WHOfzKgi_xuTKUIdnjGdn4N6Xn671vRKJ3G5Eynbfx2XDWfpv9bH1_yVnQGY6DNhWr2rXfIRQ5pybb"/>
+</div>
+<div>
+<h4 class="font-headline font-bold text-on-surface">David Miller</h4>
+<p class="text-on-surface-variant text-sm">3rd Generation Grain Farmer</p>
+</div>
+</div>
+</div>
+<div class="bg-primary p-10 rounded-[2rem] text-on-primary">
+<h4 class="font-headline font-bold text-2xl mb-4 text-primary-fixed">12,000+ Tonnes</h4>
+<p class="opacity-80">Of carbon sequestered by our partner farms last year through precise regenerative soil management.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Knowledge / Blog Section -->
+<section class="py-24 bg-surface" id="blog">
+<div class="max-w-7xl mx-auto px-6">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+<div>
+<span class="text-primary font-label font-semibold tracking-widest uppercase mb-4 block">Knowledge Center</span>
+<h2 class="text-4xl font-headline font-extrabold text-on-surface tracking-tight">Seasonal Guides &amp; Innovations</h2>
+</div>
+<a class="text-primary font-bold border-b-2 border-primary/20 hover:border-primary transition-all pb-1" href="#">View All Articles</a>
+</div>
+<div class="grid md:grid-cols-3 gap-10">
+<!-- Article 1 -->
+<article class="group">
+<div class="rounded-3xl overflow-hidden mb-6 aspect-[4/3] relative">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="modern farming dashboard showing soil moisture and nutrient levels on a tablet held against a field" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA0jTSLON0AbsWWHEaZanoNhMeBv-Z--lECiIZk1OTgeARLEr4c4eFzhquAxlDD9exQlJm5p02cZIFQqHxNgLchtTd0CZ-lBYdcvcSWScUIC6_N2EF859GVzALsqFEVNfiHr5eFKmiIF-S5bWHcFOgV_wrFMeR4qTUalZE29GUhde7hBJ8EwqZ5hYhWN8vgjqx4aZY_qOhbidlx4ZQn0A6e2DLkH_uVnwht5bm6-g4AbC5t_WnM-WOSUYt-VeTqN7wwTsZ8QWoxMmWL"/>
+<div class="absolute top-4 left-4">
+<span class="bg-white/90 backdrop-blur-md text-primary text-[10px] font-black uppercase tracking-widest px-3 py-1 rounded-full">Innovation</span>
+</div>
+</div>
+<h3 class="text-2xl font-headline font-bold text-on-surface mb-4 group-hover:text-primary transition-colors leading-tight">Mastering Soil Health: 5 Indicators to Watch This Spring</h3>
+<p class="text-on-surface-variant text-sm mb-6 line-clamp-3">Understanding the microbial ecosystem of your topsoil is the first step toward a chemical-free pest management strategy...</p>
+<span class="text-on-surface-variant text-xs font-label">MARCH 12, 2024 • 8 MIN READ</span>
+</article>
+<!-- Article 2 -->
+<article class="group">
+<div class="rounded-3xl overflow-hidden mb-6 aspect-[4/3] relative">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="neatly organized rows of various vegetable seeds in a climate controlled storage facility" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBlmIGNxuRycGoiDXiXOVQebfxkEkiP-vh3H-LJ1Ad_jDbVaQ0ZXLnwK7SVVT6JQi7I8s7-xFcu-0EvrYufEhHxzPAOhI6c5bd3WDSevRqMz19rGY120QMVd5DMn3ydXnBoi0AOvnO1lmzMdHztBIUaobuh7JU1V4tXKOsj_jDCs5E7r6vjntW_rDZCzidQpolJNza_k9XCOBidfqRRbDMn3qK4irrsK084ihxSUkdSofcs38dG0WgTqMUsxnhb0pDxcQuU-uW0MPsQ"/>
+<div class="absolute top-4 left-4">
+<span class="bg-white/90 backdrop-blur-md text-tertiary text-[10px] font-black uppercase tracking-widest px-3 py-1 rounded-full">Sustainability</span>
+</div>
+</div>
+<h3 class="text-2xl font-headline font-bold text-on-surface mb-4 group-hover:text-primary transition-colors leading-tight">The Seed Sovereignty Movement: Why Genetics Matter</h3>
+<p class="text-on-surface-variant text-sm mb-6 line-clamp-3">How open-source genetics and ancestral seed saving are protecting farmers against monoculture risks and climate shifts...</p>
+<span class="text-on-surface-variant text-xs font-label">FEBRUARY 28, 2024 • 12 MIN READ</span>
+</article>
+<!-- Article 3 -->
+<article class="group">
+<div class="rounded-3xl overflow-hidden mb-6 aspect-[4/3] relative">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="colorful garden produce including carrots and greens at an organic farmers market stall" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDOmHY9yvqbJl92SfALU842WLFe5V1XdObW8zrhMPOgY0KAZ-NkzU5EjSCoyW3Pdj9xbmDs9cQT6E2Jn19iLDWMZPpzF2N3yHba17GA9T-7JQRtG9alJTlIHX6LrnFd-7hsFS5mGenSWpl199QwsOa3k2ZstWDt1xBHXuBYxhN5YIlud0cyqCpv219F1PQgolhg1rOy-Bo98w9dmYKxIjISqhQZOEEeAPdMGsRlAoY-8OZ4vPi9kWym6h6o44i-EGCM2RnKjz-fFFry"/>
+<div class="absolute top-4 left-4">
+<span class="bg-white/90 backdrop-blur-md text-emerald-600 text-[10px] font-black uppercase tracking-widest px-3 py-1 rounded-full">Guides</span>
+</div>
+</div>
+<h3 class="text-2xl font-headline font-bold text-on-surface mb-4 group-hover:text-primary transition-colors leading-tight">Transitioning to Organic: A Year One Roadmap</h3>
+<p class="text-on-surface-variant text-sm mb-6 line-clamp-3">The first 12 months of organic transition are the hardest. Here is how to manage risks while your land rehabilitates...</p>
+<span class="text-on-surface-variant text-xs font-label">FEBRUARY 15, 2024 • 15 MIN READ</span>
+</article>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="py-24 bg-surface-container" id="contact">
+<div class="max-w-7xl mx-auto px-6">
+<div class="bg-surface rounded-[3rem] overflow-hidden shadow-2xl flex flex-col lg:flex-row">
+<!-- Form Area -->
+<div class="lg:w-3/5 p-8 md:p-16">
+<h2 class="text-4xl font-headline font-extrabold text-on-surface mb-4">Let's Grow Together</h2>
+<p class="text-on-surface-variant mb-10">Have questions about our products or need a consultation? Our agronomists are ready to help.</p>
+<form class="space-y-6">
+<div class="grid md:grid-cols-2 gap-6">
+<div class="space-y-2">
+<label class="text-xs font-bold uppercase tracking-wider text-on-surface-variant ml-1">Full Name</label>
+<input class="w-full bg-surface-container-low border-none rounded-xl p-4 focus:ring-2 focus:ring-primary transition-all" placeholder="John Doe" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="text-xs font-bold uppercase tracking-wider text-on-surface-variant ml-1">Email Address</label>
+<input class="w-full bg-surface-container-low border-none rounded-xl p-4 focus:ring-2 focus:ring-primary transition-all" placeholder="john@farm.com" type="email"/>
+</div>
+</div>
+<div class="space-y-2">
+<label class="text-xs font-bold uppercase tracking-wider text-on-surface-variant ml-1">Inquiry Type</label>
+<select class="w-full bg-surface-container-low border-none rounded-xl p-4 focus:ring-2 focus:ring-primary transition-all">
+<option>Product Quote</option>
+<option>Consultancy Services</option>
+<option>Sustainability Partnership</option>
+<option>Media Inquiry</option>
+</select>
+</div>
+<div class="space-y-2">
+<label class="text-xs font-bold uppercase tracking-wider text-on-surface-variant ml-1">Your Message</label>
+<textarea class="w-full bg-surface-container-low border-none rounded-xl p-4 focus:ring-2 focus:ring-primary transition-all" placeholder="Tell us about your land and your goals..." rows="5"></textarea>
+</div>
+<button class="signature-gradient text-on-primary py-5 px-10 rounded-2xl font-bold w-full md:w-fit scale-95-on-click transition-transform" type="submit">Send Message</button>
+</form>
+</div>
+<!-- Info Area -->
+<div class="lg:w-2/5 signature-gradient p-8 md:p-16 text-on-primary flex flex-col">
+<div class="mb-12">
+<h3 class="text-2xl font-headline font-bold mb-8">Contact Information</h3>
+<div class="space-y-6">
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined bg-white/10 p-3 rounded-xl">location_on</span>
+<div>
+<p class="font-bold">Headquarters</p>
+<p class="opacity-80">1200 Agri-Tech Plaza, Silicon Valley,<br/>California, CA 94043</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined bg-white/10 p-3 rounded-xl">call</span>
+<div>
+<p class="font-bold">Phone</p>
+<p class="opacity-80">+1 (555) 012-3456</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined bg-white/10 p-3 rounded-xl">mail</span>
+<div>
+<p class="font-bold">Email</p>
+<p class="opacity-80">hello@greenfields.agro</p>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-auto">
+<div class="rounded-3xl overflow-hidden h-48 mb-8 shadow-inner grayscale contrast-125 brightness-75 border border-white/10">
+<img class="w-full h-full object-cover" data-alt="abstract stylized aerial view map showing landscape contours in deep greens and earth tones" data-location="San Francisco" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBmjNTeawwZuBywz7u2JqxUefLapwr0TH_zkkTaHAqBRdyYQTIobtKi6s3FnDNoTPiFt0Cz6aFeH_u-PZxN9u1KCIZZ8DdP2beOwHQcXkLtcKuiVzVcbi7P-d0au6TgITHBoyodRs6avw2zMNOJ8tkbMQRdh0ii1zhWsi3GubR8BJfpBh4Ks2EkA_jP1WFggCFS4yZ5MaqCc951oJBGotix9m82y6uuWlNEINaZt8pwGZ2voQTeC8chTH52IN4dTlnm5L1dIqk_xWs3"/>
+</div>
+<div class="flex gap-4">
+<a class="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center hover:bg-white/20 transition-all" href="#">
+<span class="material-symbols-outlined">public</span>
+</a>
+<a class="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center hover:bg-white/20 transition-all" href="#">
+<span class="material-symbols-outlined">share</span>
+</a>
+<a class="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center hover:bg-white/20 transition-all" href="#">
+<span class="material-symbols-outlined">linked_camera</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-12 px-6 mt-20 bg-stone-100 dark:bg-stone-950">
+<div class="max-w-7xl mx-auto flex flex-col lg:flex-row lg:justify-between items-center gap-10">
+<div class="text-center lg:text-left">
+<div class="text-xl font-black text-emerald-900 dark:text-emerald-400 mb-2">GreenFields AgroTech</div>
+<p class="text-stone-500 max-w-sm mb-6 text-sm font-inter tracking-wide leading-relaxed">© 2024 GreenFields AgroTech. Organic Precision in Agriculture.</p>
+<div class="flex flex-wrap justify-center lg:justify-start gap-6">
+<a class="text-stone-500 hover:text-emerald-600 transition-opacity opacity-80 hover:opacity-100 hover:underline decoration-emerald-500/30 underline-offset-4 text-sm font-inter" href="#">Privacy Policy</a>
+<a class="text-stone-500 hover:text-emerald-600 transition-opacity opacity-80 hover:opacity-100 hover:underline decoration-emerald-500/30 underline-offset-4 text-sm font-inter" href="#">Terms of Service</a>
+<a class="text-stone-500 hover:text-emerald-600 transition-opacity opacity-80 hover:opacity-100 hover:underline decoration-emerald-500/30 underline-offset-4 text-sm font-inter" href="#">Sustainability Report</a>
+<a class="text-stone-500 hover:text-emerald-600 transition-opacity opacity-80 hover:opacity-100 hover:underline decoration-emerald-500/30 underline-offset-4 text-sm font-inter" href="#">Career</a>
+</div>
+</div>
+<div class="w-full lg:w-auto bg-white dark:bg-stone-900 p-8 rounded-3xl shadow-sm">
+<h4 class="font-headline font-bold text-lg mb-4 text-emerald-900 dark:text-emerald-100">Join our newsletter</h4>
+<div class="flex gap-2">
+<input class="bg-stone-100 dark:bg-stone-800 border-none rounded-xl px-4 py-2 focus:ring-2 focus:ring-emerald-500 w-full sm:w-64 text-sm" placeholder="Email address" type="email"/>
+<button class="bg-emerald-900 dark:bg-emerald-700 text-white px-6 py-2 rounded-xl text-sm font-bold scale-95-on-click transition-all shrink-0">Subscribe</button>
+</div>
+<p class="text-[10px] text-stone-400 mt-4 uppercase tracking-widest font-label">No spam, just seasonal insights.</p>
+</div>
+</div>
+</footer>
+<!-- Back to Top FAB (Contextual for long scroll pages) -->
+<a class="fixed bottom-8 right-8 bg-primary text-on-primary w-14 h-14 rounded-full flex items-center justify-center shadow-2xl hover:bg-primary-container transition-all z-40" href="#hero">
+<span class="material-symbols-outlined">arrow_upward</span>
+</a>
+</body></html>
