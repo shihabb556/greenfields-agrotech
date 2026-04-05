@@ -1,5 +1,6 @@
 import Section from '../Section';
 import { Quote } from 'lucide-react';
+import { images } from '../../data';
 
 const Projects = () => {
   return (
@@ -14,7 +15,7 @@ const Projects = () => {
               <img 
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000" 
                 alt="happy elder farmer standing in a flourishing cornfield"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBlaiCh7PbtcK2TzpNnm1XNQn8tbsGetRjk0E63ffQnEoFcYnOfAm9RO1Fw58j7sP66Y5nbvbHijjBaMpF-IRJxWR1H6_zX9EvxkLUrTYRypjUU5AF3MEinx_0ZlZiE_Tl2TZh6ONYxZ2uMzcYrZIiyZf1jYdP1klkghZ0hDcL5EXdh--AD-uucKz59bmKWLTfTiTTRL7NI2gC7Lo2DoFJiE6BtFHRU6JlluMmXgb-TG4C4ti9zZXLVIzNuKWubeVMuUWyATmXGnycQ"
+                src={images.caseStudy}
                 loading="lazy"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent"></div>
@@ -40,7 +41,7 @@ const Projects = () => {
                     <img 
                       className="w-full h-full object-cover" 
                       alt="David Miller"
-                      src="https://lh3.googleusercontent.com/aida-public/AB6AXuCSocVB4ikcZpTQhSmv-M2XDpxvS1JStyYbjrXvqxPwDa5JsO8VKZT6Kfjf8CuNhrbTfCnsZmWCSeiIZYhGZZQb7t0X-_O65TVIRyaZlxoSLdLQqUqakTVsBzrUMqi9BO5JB6oVNoocBoA7pjkmk98OvBC-c5nzATsvcSEqL2JvROZhi63SWeZEZIwbnwQ-98WHOfzKgi_xuTKUIdnjGdn4N6Xn671vRKJ3G5Eynbfx2XDWfpv9bH1_yVnQGY6DNhWr2rXfIRQ5pybb"
+                      src={images.testimonial}
                       loading="lazy"
                     />
                   </div>

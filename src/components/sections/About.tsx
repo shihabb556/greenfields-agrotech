@@ -1,5 +1,6 @@
 import Section from '../Section';
 import { Rocket, Eye, Shield, CheckCircle, Leaf } from 'lucide-react';
+import { images } from '../../data';
 
 const About = () => {
   return (
@@ -11,7 +12,7 @@ const About = () => {
               <img 
                 className="w-full h-[600px] object-cover" 
                 alt="young green sprout emerging from dark fertile soil"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBPhH7qwdeMadydZjvnybJY0IMFbDQplDRZMyhf_WtU4vjd58UcknPxhSGCnLFNnwUDDMRPS3JHzROacy3npOpk7qdMyg7_vSwim_FwSzWS3hbeEhUFZ_n5qPSckEie_mCPCE3qqRmrcJqqqBpgkGPX2lum95FD1GvvjFOWgx0r4RkiHoRAEW24p9kzQ2eLYkUA68jC6enweDYKy-xk0h8xDEKJGM-QhVvchnQN2O2Rbs78kyBU7O7j1CP6RXuP6y5MfgZED-kq7dkp" 
+                src={images.about} 
                 loading="lazy"
               />
             </div>

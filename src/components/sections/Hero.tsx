@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { stats, siteConfig } from '../../data';
+import { stats, siteConfig, images } from '../../data';
 
 const Hero = () => {
   return (
@@ -8,7 +8,7 @@ const Hero = () => {
         <img 
           className="w-full h-full object-cover brightness-[0.7] transform-gpu transition-all duration-700" 
           alt="expansive lush green crop field under a vibrant sunrise"
-          src="https://lh3.googleusercontent.com/aida-public/AB6AXuB4hEHmvIfMl0EpdPGV9VKyyuO_O7pf47C-OTWGKzwTSmFItoZAU92svTXypg_sd8iDa1gWJzJ0BPuXO09EYE2Mu83tH-6UhJtgJhXqgD1o-TvWl8OrkAgIlqWK7c1G3ir2iO2TYhU_LA9L0L8vVJb8LxF-RbOxMIztIjFC9R5LDA5JVR3pwICWDpuhI00vHwca4FbbyJTnoOGJi71VFUw3fbZOGyvLUAqavUYxgQ4WdQlwVBa2VO0qqRB2J5JTqpsvntmF060a-Ydm" 
+          src={images.hero} 
           loading="eager"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-black/20"></div>
@@ -16,7 +16,7 @@ const Hero = () => {
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 py-20 text-white w-full">
         <div className="max-w-3xl">
-          <motion.span 
+          <motion.span
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
@@ -25,16 +25,16 @@ const Hero = () => {
             {siteConfig.tagline}
           </motion.span>
 
-          <motion.h1 
+          <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="text-5xl md:text-7xl font-headline font-extrabold tracking-tight mb-6 leading-[1.1]"
+            className="text-2xl md:text-4xl font-headline font-extrabold tracking-tight mb-6 leading-[1.1]"
           >
             The Future of Agriculture is <span className="text-primary-fixed">Organic & Precise</span>.
           </motion.h1>
 
-          <motion.p 
+          <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
@@ -43,7 +43,7 @@ const Hero = () => {
             Leveraging advanced agronomy and sustainable practices to empower the next generation of global farmers with precision-engineered organic solutions.
           </motion.p>
 
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.8 }}
@@ -59,7 +59,7 @@ const Hero = () => {
         </div>
 
         {/* Stats Row */}
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 1 }}

@@ -1,14 +1,15 @@
 import { useState } from 'react';
 import Section from '../Section';
 import { products } from '../../data';
+import { MessageSquare, Truck } from 'lucide-react';
 
 const categories = ["All Products", "Seeds", "Equipment", "Fertilizers"];
 
 const Products = () => {
   const [activeCategory, setActiveCategory] = useState("All Products");
 
-  const filteredProducts = activeCategory === "All Products" 
-    ? products 
+  const filteredProducts = activeCategory === "All Products"
+    ? products
     : products.filter(p => p.category === activeCategory);
 
   return (
@@ -22,11 +23,10 @@ const Products = () => {
               <button
                 key={cat}
                 onClick={() => setActiveCategory(cat)}
-                className={`px-6 py-2 rounded-full text-sm font-bold transition-all duration-300 ${
-                  activeCategory === cat 
-                  ? 'bg-primary text-on-primary shadow-lg shadow-primary/20' 
-                  : 'bg-surface-container hover:bg-surface-container-highest text-stone-600'
-                }`}
+                className={`px-6 py-2 rounded-full text-sm font-bold transition-all duration-300 ${activeCategory === cat
+                    ? 'bg-primary text-on-primary shadow-lg shadow-primary/20'
+                    : 'bg-surface-container hover:bg-surface-container-highest text-stone-600'
+                  }`}
               >
                 {cat}
               </button>
@@ -36,15 +36,14 @@ const Products = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {filteredProducts.map((product) => (
-            <div 
+            <div
               key={product.id}
-              className={`${
-                product.featured ? 'md:col-span-2 flex-col md:flex-row' : 'flex-col'
-              } bg-surface-container rounded-[2rem] overflow-hidden group flex transition-all duration-500 hover:shadow-2xl border border-stone-200/50`}
+              className={`${product.featured ? 'md:col-span-2 flex-col md:flex-row' : 'flex-col'
+                } bg-surface-container rounded-[2rem] overflow-hidden group flex transition-all duration-500 hover:shadow-2xl border border-stone-200/50`}
             >
               <div className={`${product.featured ? 'md:w-1/2 h-64 md:h-auto' : 'h-64'} overflow-hidden`}>
-                <img 
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000" 
+                <img
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000"
                   alt={product.title}
                   src={product.image}
                   loading="lazy"
@@ -76,15 +75,15 @@ const Products = () => {
               <p className="text-on-primary-container opacity-80 mb-6">
                 We provide specialized pricing and logistics for commercial farms and cooperatives managing over 500 acres.
               </p>
-              <a 
-                className="inline-flex items-center gap-2 bg-white text-primary px-8 py-3 rounded-xl font-bold hover:bg-stone-50 transition-colors shadow-xl" 
+              <a
+                className="inline-flex items-center gap-2 bg-white text-gray-100 px-8 py-3 rounded-xl font-bold hover:bg-stone-50 transition-colors shadow-xl"
                 href="#contact"
               >
-                Speak to a Specialist <span className="material-symbols-outlined text-sm">chat</span>
+                Speak to a Specialist <MessageSquare size={16} />
               </a>
             </div>
             <div className="md:w-1/3 flex justify-center opacity-20 group-hover:opacity-30 transition-opacity">
-              <span className="material-symbols-outlined" style={{ fontSize: '100px' }}>local_shipping</span>
+              <Truck size={100} className="text-on-primary-container opacity-20 group-hover:opacity-30 transition-opacity" />
             </div>
           </div>
         </div>

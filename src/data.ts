@@ -4,6 +4,13 @@ export const siteConfig = {
   tagline: "Cultivating Innovation, Harvesting Sustainability",
 };
 
+export const images = {
+  hero: "/images/hero-bg.jpg",
+  about: "/images/about-heritage.jpg",
+  caseStudy: "/images/case-study-valley.jpg",
+  testimonial: "/images/testimonial-miller.jpg",
+};
+
 export const navLinks = [
   { name: "Hero", href: "#hero" },
   { name: "About", href: "#about" },
@@ -24,25 +31,25 @@ export const services = [
   {
     title: "Seed Supply",
     description: "Non-GMO, high-yield varieties optimized for diverse regional microclimates.",
-    icon: "grass",
+    icon: "Sprout",
     link: "#",
   },
   {
     title: "Farm Equipment",
     description: "Precision machinery and IoT sensors for real-time crop monitoring.",
-    icon: "agriculture",
+    icon: "Tractor",
     link: "#",
   },
   {
     title: "Consultancy",
     description: "Personalized soil health analysis and long-term crop rotation strategy.",
-    icon: "psychology",
+    icon: "Brain",
     link: "#",
   },
   {
     title: "Bio-inputs",
     description: "Natural fertilizers and organic pesticides designed for cellular efficacy.",
-    icon: "science",
+    icon: "FlaskConical",
     link: "#",
   },
 ];
@@ -53,7 +60,7 @@ export const products = [
     title: "Apex-900 Multi-Seeder",
     description: "Precision pneumatic planting for consistent depth and optimal spacing in any soil type.",
     category: "Equipment",
-    image: "https://lh3.googleusercontent.com/aida-public/AB6AXuB812h3MQUg7mPOcUz5s6UPTmqlYzn7yoBNiDSZscKVU7VtV0xhb8uCuKxzKI3S9ok8BhrJkMAs1vjdFAW5FuysvaUBAwSkpU4YutN4mxNc22Vw8o5VbXiMzAS4BnIUV-RUQX6CUzuMBVYsFxay-diLGDzn37u_uamVR6JJJOZIe-Ifk2dTVgfyNaTq4JV6gtjk7J7fylwLtyEi2s6_-EHodl8xTYXkBbMzxRuHz0DIp99ZF08R9Z1Rs-kYu-qsRc45DDt4PhEpxlar",
+    image: "/images/product-seeder.jpg",
     featured: true,
     tag: "Best Seller",
   },
@@ -62,14 +69,14 @@ export const products = [
     title: "Heritage Wheat Blend",
     description: "Ancient grain genetics bred for modern climate resilience and nutrient density.",
     category: "Seeds",
-    image: "https://lh3.googleusercontent.com/aida-public/AB6AXuCP42vbLRppd0jNmDIHiHz8g3JZtPsb4LGIwIRkPIfuhfUfLN4cW7HKQM9ymEStsm1gHdBEYQCncRv9Fo8p6FjkNuZtZQYwv07D2lTiJd5E0ShMnXy_zZavbeXOaC-I3_lIegJb44YOCx6fq_CVHopggv38-g-REvjg2qU-R8GwCcAQUFmZGHEnMDK4VgjV4zvaf6T_sces0tPWWbDM4i0--pvdmsyMdPSpqiMXI_HWrqeJ76t0vGbz2CGAQ5mD_q-0TAJy52nEYz0k",
+    image: "/images/product-seeds.jpg",
   },
   {
     id: 3,
     title: "BioBoost Plus",
     description: "Microbial soil enhancer that triples nitrogen fixation naturally without chemical runoff.",
     category: "Fertilizers",
-    image: "https://lh3.googleusercontent.com/aida-public/AB6AXuBVxeoe2lLVRfgITrdqVImBvLJoQUzU4HCzC1g68D6EkAJJcJpa8F6nyJlbgMaiEMpq8lOq6be-hW8MYFgqlomtsDU8yGnyMforjJuIStk2IoIUru615Vu7-nG114pP2y47VqBGTaT09JWphvOxbbTVHfp1YCefSc2nEcEFUc83Zq9f5slw1rAmE7hjHwrwajiVxqUgXlA5g0gteqliKGGZ6FkYoLyp8cUAyfzAkzy_L3FfIBRlve9JcamJnwjADChdBmBeFFj106vJ",
+    image: "/images/product-bioboost.jpg",
   },
 ];
 
@@ -80,7 +87,7 @@ export const articles = [
     category: "Innovation",
     date: "MARCH 12, 2024",
     readTime: "8 MIN READ",
-    image: "https://lh3.googleusercontent.com/aida-public/AB6AXuA0jTSLON0AbsWWHEaZanoNhMeBv-Z--lECiIZk1OTgeARLEr4c4eFzhquAxlDD9exQlJm5p02cZIFQqHxNgLchtTd0CZ-lBYdcvcSWScUIC6_N2EF859GVzALsqFEVNfiHr5eFKmiIF-S5bWHcFOgV_wrFMeR4qTUalZE29GUhde7hBJ8EwqZ5hYhWN8vgjqx4aZY_qOhbidlx4ZQn0A6e2DLkH_uVnwht5bm6-g4AbC5t_WnM-WOSUYt-VeTqN7wwTsZ8QWoxMmWL",
+    image: "/images/blog-soil.jpg",
   },
   {
     title: "The Seed Sovereignty Movement: Why Genetics Matter",
@@ -88,7 +95,7 @@ export const articles = [
     category: "Sustainability",
     date: "FEBRUARY 28, 2024",
     readTime: "12 MIN READ",
-    image: "https://lh3.googleusercontent.com/aida-public/AB6AXuBlmIGNxuRycGoiDXiXOVQebfxkEkiP-vh3H-LJ1Ad_jDbVaQ0ZXLnwK7SVVT6JQi7I8s7-xFcu-0EvrYufEhHxzPAOhI6c5bd3WDSevRqMz19rGY120QMVd5DMn3ydXnBoi0AOvnO1lmzMdHztBIUaobuh7JU1V4tXKOsj_jDCs5E7r6vjntW_rDZCzidQpolJNza_k9XCOBidfqRRbDMn3qK4irrsK084ihxSUkdSofcs38dG0WgTqMUsxnhb0pDxcQuU-uW0MPsQ",
+    image: "/images/blog-seeds.jpg",
   },
   {
     title: "Transitioning to Organic: A Year One Roadmap",
@@ -96,7 +103,7 @@ export const articles = [
     category: "Guides",
     date: "FEBRUARY 15, 2024",
     readTime: "15 MIN READ",
-    image: "https://lh3.googleusercontent.com/aida-public/AB6AXuDOmHY9yvqbJl92SfALU842WLFe5V1XdObW8zrhMPOgY0KAZ-NkzU5EjSCoyW3Pdj9xbmDs9cQT6E2Jn19iLDWMZPpzF2N3yHba17GA9T-7JQRtG9alJTlIHX6LrnFd-7hsFS5mGenSWpl199QwsOa3k2ZstWDt1xBHXuBYxhN5YIlud0cyqCpv219F1PQgolhg1rOy-Bo98w9dmYKxIjISqhQZOEEeAPdMGsRlAoY-8OZ4vPi9kWym6h6o44i-EGCM2RnKjz-fFFry",
+    image: "/images/blog-organic.jpg",
   },
 ];
 
@@ -104,5 +111,5 @@ export const contactInfo = {
   address: "1200 Agri-Tech Plaza, Silicon Valley, California, CA 94043",
   phone: "+1 (555) 012-3456",
   email: "hello@greenfields.agro",
-  mapImage: "https://lh3.googleusercontent.com/aida-public/AB6AXuBmjNTeawwZuBywz7u2JqxUefLapwr0TH_zkkTaHAqBRdyYQTIobtKi6s3FnDNoTPiFt0Cz6aFeH_u-PZxN9u1KCIZZ8DdP2beOwHQcXkLtcKuiVzVcbi7P-d0au6TgITHBoyodRs6avw2zMNOJ8tkbMQRdh0ii1zhWsi3GubR8BJfpBh4Ks2EkA_jP1WFggCFS4yZ5MaqCc951oJBGotix9m82y6uuWlNEINaZt8pwGZ2voQTeC8chTH52IN4dTlnm5L1dIqk_xWs3",
+  mapImage: "/images/contact-map.jpg",
 };
