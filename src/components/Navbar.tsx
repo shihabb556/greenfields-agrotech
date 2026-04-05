@@ -15,13 +15,12 @@ const Navbar = () => {
   }, []);
 
   return (
-    <header 
-      className={`sticky top-0 w-full z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-white/90 backdrop-blur-xl shadow-sm py-3' : 'bg-white/80 backdrop-blur-md py-4'
-      }`}
+    <header
+      className={`sticky top-0 w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-white/90 backdrop-blur-xl shadow-sm py-3' : 'bg-white/80 backdrop-blur-md py-4'
+        }`}
     >
       <nav className="flex justify-between items-center max-w-7xl mx-auto px-6">
-        <a href="#hero" className="text-2xl font-extrabold text-emerald-950 tracking-tighter font-headline">
+        <a href="#hero" className="text-xl md:text-2xl font-extrabold text-emerald-950 tracking-tighter font-headline">
           {siteConfig.name}
         </a>
 
@@ -42,7 +41,7 @@ const Navbar = () => {
         </div>
 
         {/* Mobile Toggle */}
-        <button 
+        <button
           className="md:hidden text-primary p-2"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
         >

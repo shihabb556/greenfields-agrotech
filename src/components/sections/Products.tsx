@@ -17,15 +17,15 @@ const Products = () => {
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
           <span className="text-tertiary font-label font-semibold tracking-widest uppercase mb-4 block">Our Inventory</span>
-          <h2 className="text-4xl md:text-5xl font-headline font-extrabold text-on-surface mb-6 tracking-tight">Precision Farming Essentials</h2>
+          <h2 className="text-xl md:text-5xl font-headline font-extrabold text-on-surface mb-6 tracking-tight">Precision Farming Essentials</h2>
           <div className="flex flex-wrap justify-center gap-4 mt-8">
             {categories.map((cat) => (
               <button
                 key={cat}
                 onClick={() => setActiveCategory(cat)}
                 className={`px-6 py-2 rounded-full text-sm font-bold transition-all duration-300 ${activeCategory === cat
-                    ? 'bg-primary text-on-primary shadow-lg shadow-primary/20'
-                    : 'bg-surface-container hover:bg-surface-container-highest text-stone-600'
+                  ? 'bg-primary text-on-primary shadow-lg shadow-primary/20'
+                  : 'bg-surface-container hover:bg-surface-container-highest text-stone-600'
                   }`}
               >
                 {cat}
@@ -55,7 +55,7 @@ const Products = () => {
                     {product.tag}
                   </span>
                 )}
-                <h3 className={`${product.featured ? 'text-3xl' : 'text-2xl'} font-headline font-bold text-on-surface mb-4`}>
+                <h3 className={`${product.featured ? 'text-xl' : 'text-2xl'} font-headline font-bold text-on-surface mb-4`}>
                   {product.title}
                 </h3>
                 <p className="text-on-surface-variant mb-8 text-sm leading-relaxed">
@@ -71,19 +71,19 @@ const Products = () => {
           {/* Small Bento Card */}
           <div className="md:col-span-2 bg-primary-container rounded-[2rem] p-10 flex flex-col md:flex-row items-center gap-10 border border-emerald-900/10">
             <div className="md:w-2/3">
-              <h3 className="text-3xl font-headline font-bold text-on-primary-container mb-4">Custom Bulk Orders?</h3>
-              <p className="text-on-primary-container opacity-80 mb-6">
+              <h3 className="text-2xl md:text-xl font-headline font-bold text-on-primary-container mb-4">Custom Bulk Orders?</h3>
+              <p className="text-on-primary-container opacity-80 mb-6 text-sm md:text-base leading-relaxed">
                 We provide specialized pricing and logistics for commercial farms and cooperatives managing over 500 acres.
               </p>
               <a
-                className="inline-flex items-center gap-2 bg-white text-gray-100 px-8 py-3 rounded-xl font-bold hover:bg-stone-50 transition-colors shadow-xl"
+                className="inline-flex items-center gap-2 bg-white text-gray-800 px-8 py-3 rounded-xl font-bold hover:bg-stone-50 transition-colors shadow-xl"
                 href="#contact"
               >
                 Speak to a Specialist <MessageSquare size={16} />
               </a>
             </div>
-            <div className="md:w-1/3 flex justify-center opacity-20 group-hover:opacity-30 transition-opacity">
-              <Truck size={100} className="text-on-primary-container opacity-20 group-hover:opacity-30 transition-opacity" />
+            <div className="md:w-1/3 flex justify-center group-hover:scale-110 transition-transform duration-500">
+              <Truck size={100} className="text-on-primary-container opacity-40 group-hover:opacity-70 transition-opacity" />
             </div>
           </div>
         </div>
